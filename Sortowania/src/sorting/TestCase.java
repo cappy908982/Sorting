@@ -17,6 +17,7 @@ class TestCase {
 		BubbleSort.bubbleSort(tab1);
 		long executionTimeBubbleSort=System.currentTimeMillis()- millisActualTimeBubble;
 		System.out.println("Czas w milisekundach w przypadku bubble sort 19 elementowej tablicy: "+executionTimeBubbleSort);
+		assertTrue(executionTimeQuickSort>executionTimeBubbleSort,"BubbleSort should have better results in smaller tables ");
 		
 	}
 	@Test
@@ -30,6 +31,7 @@ class TestCase {
 		BubbleSort.bubbleSort(tab2);
 		long executionTimeBubbleSort=System.currentTimeMillis()- millisActualTime;
 		System.out.println("Czas w milisekundach w przypadku bubble sort 48 elementowej tablicy: "+executionTimeBubbleSort);
+		assertTrue(executionTimeQuickSort>executionTimeBubbleSort,"BubbleSort should have better results in smaller tables ");
 	}
 }
 
